@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	
+	<style type="text/css">
+		
+		form{
+           margin-top: 100px;
+           margin-left: 500px;
+		}
+		button{
+			background-color: grey;
+		}
+		input{
+			border:1px solid blue;
+		}
+	
+	</style>
+
+</head>
+<body>
+   <form action="moviesubmit" method="post">
+   	 Enter movie name: <input type="text" name="movie" placeholder="enter movie name"><br><br>
+   	 <button type="submit">submit</button>
+   </form>
+  
+  	{{#if dataa}}	
+  	
+  		<h3>Title :-    </h3>{{dataa.Title}}
+  		<hr>
+  		<h3>Year :-    </h3>{{dataa.Year}}<br>
+  		<hr>
+  		<h3>Rated :-    </h3>{{dataa.Rated}}<br>
+  		<hr>
+  		<h3>Released :-    </h3>{{dataa.Released}}<br>
+  		<hr>
+  		<h3>Runtime :-    </h3>{{dataa.Runtime}}<br>
+  		<hr>
+  		<h3>Genre :-    </h3>{{dataa.Genre}}<br>
+  		<hr>
+  		<h3>Director :-    </h3>{{dataa.Director}}<br>
+  		<hr>
+  		<h3>Writer :-    </h3>{{dataa.Writer}}<br>
+  		<hr>
+  		<h3>Actors :-    </h3>{{dataa.Actors}}<br>
+  		<hr>
+  		<h3>Plot :-    </h3>{{dataa.Plot}}<br>
+  		<hr>
+  		<h3>Language :-    </h3>{{dataa.Language}}<br>
+  		<hr>
+  		<h3>Country :-    </h3>{{dataa.Country}}<br>
+  		<hr>
+  		<h3>Awards :-    </h3>{{dataa.Awards}}<br>
+  		<hr>
+  		<h3>Poster :-  </h3><img src="{{dataa.Poster}}"><br>
+  		<hr>
+  		<h3>Ratings :-    </h3>{{dataa.Ratings}}<br>
+  		<h4>Source :- </h4><h4>Value :- </h4><br>
+  		<hr>
+  		<h3>Metascore :-    </h3>{{dataa.Metascore}}<br>
+  		<hr>
+  		<h3>imdbRating :-    </h3>{{dataa.imdbRating}}<br>
+  		<hr>
+  		<h3>imdbVotes :-    </h3>{{dataa.imdbVotes}}<br>
+  		<hr>
+  		<h3>imdbID :-    </h3>{{dataa.imdbID}}<br>
+  		<hr>
+  		<h3>Type :-    </h3>{{dataa.Type}}<br>
+  		<hr>
+  		<h3>DVD :-    </h3>{{dataa.DVD}}<br>
+  		<hr>
+  		<h3>BoxOffice :-    </h3>{{dataa.BoxOffice}}<br>
+  		<hr>
+  		<h3>Production :-    </h3>{{dataa.Production}}<br>
+  		<hr>
+  		<h3>Website :-    </h3>{{dataa.Website}}<br>
+  		<hr>
+  		<h3>Response :-    </h3>{{dataa.Response}}	
+  	  {{/if}}
+  	
+
+</body>
+</html>
